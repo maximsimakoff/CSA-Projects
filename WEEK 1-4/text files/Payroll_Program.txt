@@ -1,0 +1,48 @@
+package MAX_2021;
+
+import java.util.Scanner;
+
+public class PAYROLL_PROGRAM {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Declare Variables
+	String name="";
+	
+	double hours = 0.0;
+	double pay = 0.0;
+	double fedtax = 0.65;
+	double statetax = 0.5;
+	
+	
+		//Code Body
+	
+	//Questions
+	Scanner Input= new Scanner(System.in);
+	System.out.println("What is your name:");
+	name=Input.next();
+	
+	System.out.println("Number of hours worked per week: ");
+	hours=Input.nextDouble();	
+	
+	System.out.println("Wage per hour?");
+	pay=Input.nextDouble();
+	
+	//Math
+	double total=pay*hours;
+	fedtax=total*0.065;
+	statetax=total*0.05;
+	
+	//Declaring terms
+	System.out.println("Name:"+name);
+	System.out.println("Total without Tax:"+total);
+	System.out.println("Fedtax:"+fedtax);
+	System.out.println("Statetax:"+statetax);
+	
+	
+	
+	
+	}
+
+}
